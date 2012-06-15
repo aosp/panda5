@@ -15,17 +15,17 @@
 #
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/ti/omap5uevm/kernel
+LOCAL_KERNEL := device/ti/panda5/kernel
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
 PRODUCT_COPY_FILES := \
 	$(LOCAL_KERNEL):kernel \
-	device/ti/omap5uevm/init.omap5uevmboard.rc:root/init.omap5uevmboard.rc \
-	device/ti/omap5uevm/init.omap5uevmboard.usb.rc:root/init.omap5uevmboard.usb.rc \
-	device/ti/omap5uevm/ueventd.omap5uevmboard.rc:root/ueventd.omap5uevmboard.rc \
-	device/ti/omap5uevm/media_profiles.xml:system/etc/media_profiles.xml \
+	device/ti/panda5/init.omap5pandaboard.rc:root/init.omap5pandaboard.rc \
+	device/ti/panda5/init.omap5pandaboard.usb.rc:root/init.omap5pandaboard.usb.rc \
+	device/ti/panda5/ueventd.omap5pandaboard.rc:root/ueventd.omap5pandaboard.rc \
+	device/ti/panda5/media_profiles.xml:system/etc/media_profiles.xml \
 	frameworks/base/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
 	frameworks/base/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml
 
@@ -39,7 +39,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 PRODUCT_CHARACTERISTICS := tablet,nosdcard
 
 DEVICE_PACKAGE_OVERLAYS := \
-    device/ti/omap5uevm/overlay
+    device/ti/panda5/overlay
 
 PRODUCT_TAGS += dalvik.gc.type-precise
 
@@ -52,6 +52,6 @@ PRODUCT_PACKAGES += \
 	make_ext4fs
 
 $(call inherit-product, frameworks/base/build/tablet-dalvik-heap.mk)
-$(call inherit-product, hardware/ti/omap4xxx/omap4.mk)
+#$(call inherit-product, hardware/ti/omap4xxx/omap4.mk)
 $(call inherit-product-if-exists, hardware/ti/wpan/ti-wpan-products.mk)
 $(call inherit-product-if-exists, vendor/ti/omap5sevm/device-vendor.mk)

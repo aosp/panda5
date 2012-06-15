@@ -14,5 +14,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo full_omap5uevm-eng
-add_lunch_combo full_omap5uevm-userdebug
+add_lunch_combo full_omap5panda-eng
+add_lunch_combo full_omap5panda-userdebug

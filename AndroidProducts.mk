@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/full_omap5uevm.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/full_omap5panda.mk

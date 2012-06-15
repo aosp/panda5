@@ -35,10 +35,10 @@ PRODUCT_PROPERTY_OVERRIDES := \
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
-$(call inherit-product, device/ti/omap5uevm/device.mk)
+$(call inherit-product, device/ti/panda5/device.mk)
 $(call inherit-product-if-exists, vendor/ti/proprietary/omap4xxx/ti-omap4-vendor.mk)
 
-PRODUCT_NAME := full_omap5uevm
-PRODUCT_DEVICE := omap5uevm
+PRODUCT_NAME := full_omap5panda
+PRODUCT_DEVICE := panda5
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := Omap5uEvm
+PRODUCT_MODEL := Omap5panda

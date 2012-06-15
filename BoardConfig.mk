@@ -38,9 +38,9 @@ BOARD_KERNEL_CMDLINE := console=ttyO2,115200n8 mem=1024M androidboot.console=tty
 
 TARGET_NO_RADIOIMAGE := true
 TARGET_BOARD_PLATFORM := omap5
-TARGET_BOOTLOADER_BOARD_NAME := uevm 
+TARGET_BOOTLOADER_BOARD_NAME := panda5
 
-BOARD_EGL_CFG := device/ti/omap5uevm/egl.cfg
+BOARD_EGL_CFG := device/ti/panda5/egl.cfg
 
 #BOARD_USES_HGL := true
 #BOARD_USES_OVERLAY := true
