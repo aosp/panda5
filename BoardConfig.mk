@@ -18,6 +18,7 @@
 # by BoardConfigVendor.mk
 BOARD_USES_GENERIC_AUDIO := true
 USE_CAMERA_STUB := true
+TI_OMAP4_CAMERAHAL_VARIANT := false
 
 # Use the non-open-source parts, if they're present
 # Pull in panda until uEvm is created
