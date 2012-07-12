@@ -26,8 +26,8 @@ PRODUCT_COPY_FILES := \
 	device/ti/panda5/init.omap5pandaboard.usb.rc:root/init.omap5pandaboard.usb.rc \
 	device/ti/panda5/ueventd.omap5pandaboard.rc:root/ueventd.omap5pandaboard.rc \
 	device/ti/panda5/media_profiles.xml:system/etc/media_profiles.xml \
-	frameworks/base/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
-	frameworks/base/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml
+	frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
+	frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml
 
 PRODUCT_PACKAGES := \
         make_ext4fs \
@@ -51,7 +51,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	make_ext4fs
 
-$(call inherit-product, frameworks/base/build/tablet-dalvik-heap.mk)
-$(call inherit-product, hardware/ti/omap4xxx/omap5.mk)
+$(call inherit-product, frameworks/native/build/tablet-dalvik-heap.mk)
+$(call inherit-product-if-exists, hardware/ti/omap4xxx/omap5.mk)
 $(call inherit-product-if-exists, hardware/ti/wpan/ti-wpan-products.mk)
 $(call inherit-product-if-exists, vendor/ti/omap5sevm/device-vendor.mk)
