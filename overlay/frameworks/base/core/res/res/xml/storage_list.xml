@@ -38,4 +38,7 @@
              android:primary="true"
              android:emulated="true"
              android:mtpReserve="100" />
+    <storage android:mountPoint="/mnt/ext_sdcard"
+             android:storageDescription="@string/storage_sd_card"
+             android:removable="true" />
 </StorageList>
