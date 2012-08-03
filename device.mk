@@ -29,6 +29,10 @@ PRODUCT_COPY_FILES := \
 	frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
 	frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml
 
+# to mount the external storage (sdcard)
+PRODUCT_COPY_FILES += \
+        device/ti/omap5sevm/vold.fstab:system/etc/vold.fstab
+
 PRODUCT_PACKAGES := \
         make_ext4fs \
 	com.android.future.usb.accessory
