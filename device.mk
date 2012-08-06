@@ -31,7 +31,7 @@ PRODUCT_COPY_FILES := \
 
 # to mount the external storage (sdcard)
 PRODUCT_COPY_FILES += \
-        device/ti/omap5sevm/vold.fstab:system/etc/vold.fstab
+        device/ti/panda5/vold.fstab:system/etc/vold.fstab
 
 PRODUCT_PACKAGES := \
         make_ext4fs \
