@@ -26,6 +26,8 @@ PRODUCT_COPY_FILES := \
 	device/ti/panda5/init.omap5pandaboard.usb.rc:root/init.omap5pandaboard.usb.rc \
 	device/ti/panda5/ueventd.omap5pandaboard.rc:root/ueventd.omap5pandaboard.rc \
 	device/ti/panda5/media_profiles.xml:system/etc/media_profiles.xml \
+	device/ti/panda5/media_codecs.xml:system/etc/media_codecs.xml \
+	device/ti/common-open/audio/audio_policy.conf:system/etc/audio_policy.conf \
 	frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
 	frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
 	frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml
@@ -69,6 +71,18 @@ PRODUCT_PACKAGES += \
 	crda \
 	regulatory.bin \
 	calibrator
+
+# Audio HAL module
+PRODUCT_PACKAGES += audio.primary.omap5
+PRODUCT_PACKAGES += audio.hdmi.omap5
+
+# Audioout libs
+PRODUCT_PACKAGES += libaudioutils
+
+PRODUCT_PACKAGES += \
+	tinymix \
+	tinyplay \
+	tinycap
 
 $(call inherit-product, frameworks/native/build/tablet-dalvik-heap.mk)
 $(call inherit-product-if-exists, hardware/ti/omap4xxx/omap4.mk)
