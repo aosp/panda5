@@ -20,6 +20,8 @@ BOARD_USES_GENERIC_AUDIO := true
 USE_CAMERA_STUB := true
 TI_OMAP4_CAMERAHAL_VARIANT := false
 ENHANCED_DOMX := true
+OMAP_ENHANCEMENT := true
+
 # Use the non-open-source parts, if they're present
 # Pull in panda until uEvm is created
 -include vendor/ti/panda/BoardConfigVendor.mk
@@ -71,6 +73,10 @@ WIFI_DRIVER_MODULE_PATH          := "/system/lib/modules/wlcore_sdio.ko"
 WIFI_DRIVER_MODULE_NAME          := "wlcore_sdio"
 WIFI_FIRMWARE_LOADER             := ""
 COMMON_GLOBAL_CFLAGS += -DUSES_TI_MAC80211
+endif
+
+ifdef OMAP_ENHANCEMENT
+COMMON_GLOBAL_CFLAGS += -DOMAP_ENHANCEMENT -DTARGET_OMAP4
 endif
 
 # Common device independent definitions
