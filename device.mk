@@ -43,6 +43,9 @@ PRODUCT_PACKAGES := \
 PRODUCT_PROPERTY_OVERRIDES := \
 	hwui.render_dirty_regions=false
 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+	persist.sys.usb.config=mtp
+
 PRODUCT_CHARACTERISTICS := tablet
 
 DEVICE_PACKAGE_OVERLAYS := \
