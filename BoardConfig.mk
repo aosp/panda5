@@ -73,3 +73,7 @@ WIFI_FIRMWARE_LOADER             := ""
 COMMON_GLOBAL_CFLAGS += -DUSES_TI_MAC80211
 endif
 
+# Common device independent definitions
+include device/ti/common-open/BoardConfig.mk
+
+
