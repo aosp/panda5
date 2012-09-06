@@ -22,6 +22,7 @@ endif
 
 PRODUCT_COPY_FILES := \
 	$(LOCAL_KERNEL):kernel \
+	device/ti/panda5/tablet_core_hardware_panda5.xml:system/etc/permissions/tablet_core_hardware_panda5.xml \
 	device/ti/panda5/init.omap5pandaboard.rc:root/init.omap5pandaboard.rc \
 	device/ti/panda5/init.omap5pandaboard.usb.rc:root/init.omap5pandaboard.usb.rc \
 	device/ti/panda5/ueventd.omap5pandaboard.rc:root/ueventd.omap5pandaboard.rc \
