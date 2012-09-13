@@ -42,3 +42,4 @@ PRODUCT_NAME := full_omap5panda
 PRODUCT_DEVICE := panda5
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := Omap5panda
+PRODUCT_MANUFACTURER := Texas_Instruments_Inc
