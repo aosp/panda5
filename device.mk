@@ -97,6 +97,14 @@ PRODUCT_PACKAGES += \
 	libboard_idJNI \
 	Board_id
 
+# BlueZ a2dp Audio HAL module
+PRODUCT_PACKAGES += audio.a2dp.default
+
+# BlueZ test tools & Shared Transport user space mgr
+PRODUCT_PACKAGES += \
+	hciconfig \
+	hcitool
+
 $(call inherit-product, frameworks/native/build/tablet-dalvik-heap.mk)
 $(call inherit-product-if-exists, hardware/ti/omap4xxx/omap5.mk)
 $(call inherit-product-if-exists, hardware/ti/wpan/ti-wpan-products.mk)
