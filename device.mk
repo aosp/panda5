@@ -91,6 +91,12 @@ PRODUCT_PACKAGES += \
 	tinyplay \
 	tinycap
 
+PRODUCT_PACKAGES += \
+	boardidentity \
+	libboardidentity \
+	libboard_idJNI \
+	Board_id
+
 $(call inherit-product, frameworks/native/build/tablet-dalvik-heap.mk)
 $(call inherit-product-if-exists, hardware/ti/omap4xxx/omap5.mk)
 $(call inherit-product-if-exists, hardware/ti/wpan/ti-wpan-products.mk)
