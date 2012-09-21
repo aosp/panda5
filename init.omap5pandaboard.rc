@@ -71,6 +71,12 @@ on fs
 # add symlink for HDCP key
         symlink /factory/hdcp.keys /system/vendor/firmware/hdcp.keys
 
+# change permissions for S3D hardware
+	chown system system /sys/devices/platform/omapdss/display0/s3d_enable
+	chown system system /sys/devices/platform/omapdss/display0/s3d_type
+	chown system system /sys/devices/platform/omapdss/display1/s3d_enable
+	chown system system /sys/devices/platform/omapdss/display1/s3d_type
+
 service pvrsrvinit /vendor/bin/pvrsrvinit
 	class core
 	user root
