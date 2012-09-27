@@ -20,6 +20,9 @@ else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
+#to flow down to ti-wpan-products.mk
+BLUETI_ENHANCEMENT := true
+
 PRODUCT_COPY_FILES := \
 	$(LOCAL_KERNEL):kernel \
 	device/ti/panda5/tablet_core_hardware_panda5.xml:system/etc/permissions/tablet_core_hardware_panda5.xml \

@@ -19,14 +19,16 @@ on post-fs-data
     chown dhcp dhcp /data/misc/dhcp
 
 #insert bluetooth modules
+    insmod /system/lib/modules/compat.ko
     #BlueZ
-    insmod /system/lib/modules/bluetooth.ko
+    #insmod /system/lib/modules/bluetooth.ko
     #BlueTI
-    #insmod /system/lib/modules/bluetooth.ko force_acl_master=1 enable_mgmt=1 enable_le=1
+    insmod /system/lib/modules/bluetooth.ko force_acl_master=1 enable_le=1
     insmod /system/lib/modules/rfcomm.ko
     insmod /system/lib/modules/hidp.ko
     insmod /system/lib/modules/bnep.ko
     insmod /system/lib/modules/btwilink.ko
+    chmod 0666 /dev/uhid
 
 on boot
 	mount debugfs /sys/kernel/debug /sys/kernel/debug

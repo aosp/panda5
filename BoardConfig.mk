@@ -21,6 +21,7 @@ USE_CAMERA_STUB := true
 TI_OMAP4_CAMERAHAL_VARIANT := false
 ENHANCED_DOMX := true
 OMAP_ENHANCEMENT := true
+BLUETI_ENHANCEMENT := true
 
 # Use the non-open-source parts, if they're present
 # Pull in panda until uEvm is created
@@ -75,6 +76,9 @@ endif
 
 ifdef OMAP_ENHANCEMENT
 COMMON_GLOBAL_CFLAGS += -DOMAP_ENHANCEMENT -DTARGET_OMAP4
+endif
+ifdef BLUETI_ENHANCEMENT
+COMMON_GLOBAL_CFLAGS += -DBLUETI_ENHANCEMENT
 endif
 
 # Common device independent definitions
