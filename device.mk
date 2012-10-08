@@ -84,7 +84,7 @@ PRODUCT_PACKAGES += \
 	TQS_D_1.7_127x.ini \
 	crda \
 	regulatory.bin \
-	calibrator
+	wlconf
 
 # Audio HAL module
 PRODUCT_PACKAGES += audio.primary.omap5
