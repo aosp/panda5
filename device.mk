@@ -45,6 +45,11 @@ PRODUCT_COPY_FILES := \
 PRODUCT_COPY_FILES += \
         device/ti/panda5/vold.fstab:system/etc/vold.fstab
 
+# These are the hardware-specific features
+PRODUCT_COPY_FILES += \
+	frameworks/native/data/etc/android.hardware.camera.xml:system/etc/permissions/android.hardware.camera.xml \
+	frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
+
 PRODUCT_PACKAGES := \
         make_ext4fs \
 	com.android.future.usb.accessory
@@ -86,6 +91,11 @@ PRODUCT_PACKAGES += \
 	crda \
 	regulatory.bin \
 	wlconf
+
+PRODUCT_PACKAGES += \
+    CameraOMAP4 \
+    Camera \
+    camera_test
 
 # Audio HAL module
 PRODUCT_PACKAGES += audio.primary.omap5

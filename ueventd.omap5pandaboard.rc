@@ -14,3 +14,6 @@
 
 #NFC
 /dev/nfc                  0666   system    system
+
+# V4L camera
+/dev/video*               0660   system    camera
