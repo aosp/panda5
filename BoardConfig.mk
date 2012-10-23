@@ -25,6 +25,10 @@ BLUETI_ENHANCEMENT := true
 #NFC
 NFC_TI_DEVICE := true
 
+ifdef OMAP_ENHANCEMENT
+OMAP_ENHANCEMENT_S3D := true
+endif
+
 # Use the non-open-source parts, if they're present
 # Pull in panda until uEvm is created
 -include vendor/ti/panda/BoardConfigVendor.mk
@@ -75,7 +79,11 @@ endif
 
 ifdef OMAP_ENHANCEMENT
 COMMON_GLOBAL_CFLAGS += -DOMAP_ENHANCEMENT -DTARGET_OMAP4
+ifdef OMAP_ENHANCEMENT_S3D
+COMMON_GLOBAL_CFLAGS += -DOMAP_ENHANCEMENT_S3D
 endif
+endif
+
 ifdef NFC_TI_DEVICE
 COMMON_GLOBAL_CFLAGS += -DNFC_JNI_TI_DEVICE
 endif
