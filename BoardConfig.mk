@@ -26,7 +26,7 @@ NFC_TI_DEVICE := true
 
 ifdef OMAP_ENHANCEMENT
 OMAP_ENHANCEMENT_CPCAM := true
-OMAP_ENHANCEMENT_S3D := true
+#OMAP_ENHANCEMENT_S3D := true
 endif
 
 # Use the non-open-source parts, if they're present
