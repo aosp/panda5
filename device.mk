@@ -93,7 +93,7 @@ PRODUCT_PACKAGES += \
 	wlconf
 
 PRODUCT_PACKAGES += \
-    CameraOMAP4 \
+    CameraOMAP \
     Camera \
     camera_test
 
