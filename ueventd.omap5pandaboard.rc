@@ -17,3 +17,6 @@
 
 # V4L camera
 /dev/video*               0660   system    camera
+
+# for Bluetooth
+/dev/hci_tty              0666   bluetooth bluetooth
