@@ -29,13 +29,14 @@ PRODUCT_COPY_FILES := \
 	device/ti/panda5/init.omap5pandaboard.rc:root/init.omap5pandaboard.rc \
 	device/ti/panda5/init.omap5pandaboard.usb.rc:root/init.omap5pandaboard.usb.rc \
 	device/ti/panda5/ueventd.omap5pandaboard.rc:root/ueventd.omap5pandaboard.rc \
+	device/ti/panda5/fstab.panda5:root/fstab.panda5 \
 	device/ti/panda5/media_profiles.xml:system/etc/media_profiles.xml \
 	device/ti/panda5/media_codecs.xml:system/etc/media_codecs.xml \
 	device/ti/common-open/audio/audio_policy.conf:system/etc/audio_policy.conf \
-        frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-        frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfcextras.xml \
-        frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
-        device/ti/omap5sevm/nfcee_access.xml:system/etc/nfcee_access.xml \
+	frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
+	frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfcextras.xml \
+	frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
+	device/ti/omap5sevm/nfcee_access.xml:system/etc/nfcee_access.xml \
 	frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
 	frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
 	frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
@@ -43,7 +44,7 @@ PRODUCT_COPY_FILES := \
 
 # to mount the external storage (sdcard)
 PRODUCT_COPY_FILES += \
-        device/ti/panda5/vold.fstab:system/etc/vold.fstab
+	device/ti/panda5/vold.fstab:system/etc/vold.fstab
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -51,7 +52,8 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
 
 PRODUCT_PACKAGES := \
-        make_ext4fs \
+	make_ext4fs \
+	e2fsck \
 	com.android.future.usb.accessory
 
 PRODUCT_PROPERTY_OVERRIDES := \
