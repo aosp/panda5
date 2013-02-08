@@ -20,7 +20,6 @@ BOARD_USES_GENERIC_AUDIO := true
 USE_CAMERA_STUB := true
 ENHANCED_DOMX := true
 OMAP_ENHANCEMENT := true
-BLUETI_ENHANCEMENT := true
 #NFC
 NFC_TI_DEVICE := true
 
@@ -91,9 +90,6 @@ endif
 
 ifdef NFC_TI_DEVICE
 COMMON_GLOBAL_CFLAGS += -DNFC_JNI_TI_DEVICE
-endif
-ifdef BLUETI_ENHANCEMENT
-COMMON_GLOBAL_CFLAGS += -DBLUETI_ENHANCEMENT
 endif
 
 # Common device independent definitions
