@@ -20,3 +20,6 @@
 
 # for Bluetooth
 /dev/hci_tty              0666   bluetooth bluetooth
+
+#for GCX
+/dev/gcioctl              0666   system     system
