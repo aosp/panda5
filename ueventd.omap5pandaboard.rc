@@ -17,3 +17,6 @@
 
 # V4L camera
 /dev/video*               0660   system    camera
+
+#for GCX
+/dev/gcioctl              0666   system     system
