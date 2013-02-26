@@ -30,10 +30,6 @@ PRODUCT_COPY_FILES := \
 	device/ti/panda5/media_profiles.xml:system/etc/media_profiles.xml \
 	device/ti/panda5/media_codecs.xml:system/etc/media_codecs.xml \
 	device/ti/common-open/audio/audio_policy.conf:system/etc/audio_policy.conf \
-	frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-	frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfcextras.xml \
-	frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
-	device/ti/omap5sevm/nfcee_access.xml:system/etc/nfcee_access.xml \
 	frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
 	frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
 	frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
