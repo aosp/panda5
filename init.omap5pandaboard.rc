@@ -54,9 +54,6 @@ on fs
     chmod 0660 /dev/ttyO4
     chown bluetooth bluetooth /dev/ttyO4
 
-# take a wakelock on boot until PM is working
-	write /sys/power/wake_lock hack
-
 # change permissions for Tiler driver
 	chmod 0777 /dev/tiler
 	chmod 0777 /dev/dmm
