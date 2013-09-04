@@ -95,6 +95,7 @@ PRODUCT_PACKAGES += \
 # Audio HAL module
 PRODUCT_PACKAGES += audio.primary.omap5
 PRODUCT_PACKAGES += audio.hdmi.omap5
+PRODUCT_PACKAGES += audio.r_submix.default
 
 # Audioout libs
 PRODUCT_PACKAGES += libaudioutils
