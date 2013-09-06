@@ -114,6 +114,10 @@ PRODUCT_PACKAGES += \
 # BlueZ a2dp Audio HAL module
 PRODUCT_PACKAGES += audio.a2dp.default
 
+# Enable AAC 5.1 decode (decoder)
+PRODUCT_PROPERTY_OVERRIDES += \
+	media.aac_51_output_enabled=true
+
 # BlueZ test tools & Shared Transport user space mgr
 PRODUCT_PACKAGES += \
 	hciconfig \
