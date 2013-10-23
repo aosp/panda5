@@ -29,7 +29,7 @@ PRODUCT_COPY_FILES := \
 	device/ti/panda5/fstab.panda5:root/fstab.panda5 \
 	device/ti/panda5/media_profiles.xml:system/etc/media_profiles.xml \
 	device/ti/panda5/media_codecs.xml:system/etc/media_codecs.xml \
-	device/ti/common-open/audio/audio_policy.conf:system/etc/audio_policy.conf \
+	device/ti/common-open/audio/hw/audio_policy.conf:system/etc/audio_policy.conf \
 	frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
 	frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
 	frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
